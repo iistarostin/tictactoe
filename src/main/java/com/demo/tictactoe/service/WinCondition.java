@@ -21,7 +21,7 @@ public class WinCondition {
         var valuesInCells = cellsToCheck.stream()
                 .map(indices -> board.getValue(indices.row, indices.column))
                 .distinct()
-                .collect(Collectors.toUnmodifiableList());
+                .collect(Collectors.toList());
         return (valuesInCells.size() == 1 && valuesInCells.get(0) != null);
     }
 }

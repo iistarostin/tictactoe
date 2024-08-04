@@ -1,6 +1,8 @@
 package com.demo.tictactoe.model;
 
 import lombok.Value;
+import org.apache.logging.log4j.util.internal.SerializationUtil;
+import org.springframework.util.SerializationUtils;
 
 @Value
 public class GameBoard {
@@ -12,12 +14,12 @@ public class GameBoard {
         data = new Players[BOARD_SIZE][BOARD_SIZE];
     }
 
-    private GameBoard(Players[][] data) {
+    public GameBoard(Players[][] data) {
         this.data = data;
     }
 
     public GameBoard withCellUpdated(int row, int column, Players value) {
-        Players[][] newData = data.clone();
+        Players[][] newData = SerializationUtils.clone(data);
         newData[row][column] = value;
         return new GameBoard(newData);
     }

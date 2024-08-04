@@ -58,7 +58,7 @@ public class GameResource {
                     .id(id)
                     .board(game.getGameBoard())
                     .message(game.getNextToMove() == null
-                            ? "Game is over"
+                            ? player.getPlayerText() + " is victorious!"
                             : game.getNextToMove().getPlayerText() + " is next to move")
                     .build();
         } catch (IllegalArgumentException e) {
