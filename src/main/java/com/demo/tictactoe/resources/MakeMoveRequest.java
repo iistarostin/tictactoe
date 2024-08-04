@@ -1,6 +1,5 @@
 package com.demo.tictactoe.resources;
 
-import com.demo.tictactoe.model.Players;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

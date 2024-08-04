@@ -1,7 +1,6 @@
 package com.demo.tictactoe.model;
 
 import lombok.Value;
-import org.apache.logging.log4j.util.internal.SerializationUtil;
 import org.springframework.util.SerializationUtils;
 
 @Value

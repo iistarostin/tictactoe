@@ -2,7 +2,6 @@ package com.demo.tictactoe.resources;
 
 import com.demo.tictactoe.exceptions.GameNotFoundException;
 import com.demo.tictactoe.exceptions.IllegalMoveException;
-import com.demo.tictactoe.model.GameBoard;
 import com.demo.tictactoe.model.GameEntity;
 import com.demo.tictactoe.model.Move;
 import com.demo.tictactoe.model.Players;

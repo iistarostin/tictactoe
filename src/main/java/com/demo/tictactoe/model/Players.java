@@ -13,12 +13,4 @@ public enum Players {
     public Players getOther() {
         return this == X ? O : X;
     }
-
-    public static Players getByText(String playerText) {
-        if ("X".equalsIgnoreCase(playerText))
-            return X;
-        if ("O".equalsIgnoreCase(playerText))
-            return O;
-        return null;
-    }
 }
